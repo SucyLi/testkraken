@@ -13,7 +13,7 @@ analysis:
   script: anat_preproc.py
   command: python
   inputs:
-  - {type: Directory, argstr: -i, value: ./HNU}
+  - {type: File, argstr: -i, value: ./HNU}
   - {type: Directory, argstr: -w, value: .}
   - {type: File, argstr: -c, value: ../scripts/pipeline_config_anat_preproc.yml}
 
